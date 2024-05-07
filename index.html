@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt-Decrypt App (AES-128)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encrypt-Decrypt App (AES-128)</h1>
+        <div class="inputs">
+            <label for="plaintext">Plaintext:</label>
+            <textarea id="plaintext" name="plaintext" rows="5" cols="50"></textarea>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required> <br>
+            <label for="ciphertext">Ciphertext:</label>
+            <textarea id="ciphertext" name="ciphertext" rows="5" cols="50"></textarea>
+        </div>
+        <div class="buttons">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
